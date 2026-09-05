@@ -2,10 +2,175 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gryphon Entertainment</title>
+<meta name="description" content="Gryphon Entertainment is an independent game studio. Creators of Swamp Adventure, a hop-dodge-and-survive arcade game for Android.">
+<link rel="canonical" href="https://raapperez.github.io/">
+<link rel="icon" href="assets/images/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raapperez.github.io/">
+<meta property="og:site_name" content="Gryphon Entertainment">
+<meta property="og:title" content="Gryphon Entertainment">
+<meta property="og:description" content="Independent game studio. Creators of Swamp Adventure, a hop-dodge-and-survive arcade game for Android.">
+<meta property="og:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gryphon Entertainment">
+<meta name="twitter:description" content="Independent game studio. Creators of Swamp Adventure, a hop-dodge-and-survive arcade game for Android.">
+<meta name="twitter:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Gryphon Entertainment",
+  "url": "https://raapperez.github.io/",
+  "sameAs": [
+    "https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure"
+  ]
+}
+</script>
+<style>
+  :root {
+    --swamp-dark: #0b2b1f;
+    --swamp-mid: #123d29;
+    --leaf: #4caf50;
+    --leaf-light: #8bd88b;
+    --cream: #fdf6e3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--swamp-dark);
+    color: var(--cream);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; width: 100%; }
+
+  header {
+    padding: 32px 0;
+  }
+  .brand {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--leaf-light);
+    text-decoration: none;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .intro { padding: 24px 0 64px; }
+  .intro h1 {
+    font-size: 36px;
+    margin: 0 0 12px;
+    color: var(--cream);
+  }
+  .intro p.lede {
+    font-size: 18px;
+    color: #b9d6c2;
+    max-width: 56ch;
+    margin: 0 0 40px;
+  }
+
+  .game-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+    align-items: center;
+    background: var(--swamp-mid);
+    border: 1px solid rgba(140, 216, 139, .18);
+    border-radius: 16px;
+    padding: 20px;
+    text-decoration: none;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .game-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--leaf);
+  }
+  .game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  .game-card .game-info h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: var(--leaf-light);
+  }
+  .game-card .game-info p {
+    margin: 0;
+    color: #b9d6c2;
+    font-size: 15px;
+  }
+  .game-card .game-info .play-cta {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--leaf);
+  }
+
+  footer {
+    padding: 24px 0 32px;
+    text-align: center;
+    color: #7fa38a;
+    font-size: 13px;
+  }
+
+  @media (max-width: 560px) {
+    .game-card { grid-template-columns: 1fr; }
+  }
+</style>
 </head>
 <body>
-<h1>Gryphon Entertainment</h1>
-<p>Developer of <a href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">Swamp Adventure</a>.</p>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">Gryphon Entertainment</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="intro">
+      <h1>Gryphon Entertainment</h1>
+      <p class="lede">We're a small studio, and we like it that way. No crunch, no bloat, no chasing trends — just a tight team pouring real care into every game we make. We'd rather ship one thing that feels great than ten things that don't. If it's not fun, it's not done.</p>
+
+      <a class="game-card" href="/swamp-adventure/">
+        <picture>
+          <source srcset="swamp-adventure/assets/images/hero.webp" type="image/webp">
+          <img src="swamp-adventure/assets/images/hero.png" alt="Swamp Adventure key art" width="1672" height="941" loading="lazy">
+        </picture>
+        <div class="game-info">
+          <h2>Swamp Adventure</h2>
+          <p>Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Android.</p>
+          <span class="play-cta">See the game →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; Gryphon Entertainment</p>
+  </div>
+</footer>
+
 </body>
 </html>

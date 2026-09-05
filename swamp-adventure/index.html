@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swamp Adventure — Gryphon Entertainment</title>
+<meta name="description" content="Swamp Adventure: hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play. Made by Gryphon Entertainment.">
+<link rel="canonical" href="https://raapperez.github.io/swamp-adventure/">
+<link rel="icon" href="assets/images/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raapperez.github.io/swamp-adventure/">
+<meta property="og:site_name" content="Gryphon Entertainment">
+<meta property="og:title" content="Swamp Adventure — Gryphon Entertainment">
+<meta property="og:description" content="Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play.">
+<meta property="og:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Swamp Adventure — Gryphon Entertainment">
+<meta name="twitter:description" content="Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play.">
+<meta name="twitter:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Swamp Adventure",
+  "description": "Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish.",
+  "genre": "Arcade",
+  "url": "https://raapperez.github.io/swamp-adventure/",
+  "image": "https://raapperez.github.io/swamp-adventure/assets/images/hero.png",
+  "applicationCategory": "Game",
+  "operatingSystem": "Android",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Gryphon Entertainment",
+    "url": "https://raapperez.github.io/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gryphon Entertainment",
+    "url": "https://raapperez.github.io/"
+  }
+}
+</script>
+<style>
+  :root {
+    --swamp-dark: #0b2b1f;
+    --swamp-mid: #123d29;
+    --leaf: #4caf50;
+    --leaf-light: #8bd88b;
+    --water: #1c5d4a;
+    --cream: #fdf6e3;
+    --wood: #7a4a2b;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--swamp-dark);
+    color: var(--cream);
+    line-height: 1.5;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #1a4a34 0%, #0e3324 60%, var(--swamp-dark) 100%);
+    padding: 48px 0 0;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 24px;
+  }
+  .brand {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--leaf-light);
+    text-decoration: none;
+  }
+  .nav a.cta {
+    background: var(--leaf);
+    color: #0b2b1f;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #2e7d32;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .hero-copy h1 { margin: 0 0 8px; }
+  .hero-copy .logo-img {
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,.35));
+    display: block;
+  }
+  .tagline {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--leaf-light);
+    margin: 0 0 18px;
+  }
+  .hero-copy p.lede {
+    font-size: 17px;
+    color: #e4f2e8;
+    max-width: 46ch;
+    margin: 0 0 28px;
+  }
+  .store-badges {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0b2b1f;
+    border: 2px solid var(--leaf);
+    color: var(--cream);
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .badge:hover { background: var(--leaf); color: #0b2b1f; transform: translateY(-2px); }
+
+  .hero-art {
+    position: relative;
+  }
+  .hero-art img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.45);
+  }
+
+  main { background: var(--swamp-dark); }
+
+  section { padding: 64px 0; }
+  h2 {
+    font-size: 28px;
+    color: var(--leaf-light);
+    margin: 0 0 8px;
+  }
+  .section-sub {
+    color: #b9d6c2;
+    margin: 0 0 36px;
+    max-width: 60ch;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .feature-card {
+    background: var(--swamp-mid);
+    border: 1px solid rgba(140, 216, 139, .18);
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .feature-card .emoji { font-size: 30px; display: block; margin-bottom: 10px; }
+  .feature-card h3 { margin: 0 0 8px; font-size: 18px; color: var(--cream); }
+  .feature-card p { margin: 0; color: #b9d6c2; font-size: 15px; }
+
+  .showcase {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .showcase img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,.4);
+  }
+
+  .cta-band {
+    background: linear-gradient(135deg, var(--water), #0e3324);
+    border-radius: 24px;
+    padding: 48px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .cta-band h2 { margin-bottom: 14px; }
+  .cta-band p { color: #d7ecdd; margin: 0 0 28px; }
+
+  footer {
+    padding: 32px 0 48px;
+    text-align: center;
+    color: #7fa38a;
+    font-size: 14px;
+  }
+  footer a { color: var(--leaf-light); text-decoration: none; }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .hero-art { order: -1; }
+    .features { grid-template-columns: 1fr; }
+    .showcase { grid-template-columns: 1fr; }
+    .cta-band { padding: 32px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="/">Gryphon Entertainment</a>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">Get the game</a>
+    </nav>
+
+    <div class="hero-grid" id="top">
+      <div class="hero-copy">
+        <h1>
+          <picture>
+            <source srcset="assets/images/logo.webp" type="image/webp">
+            <img class="logo-img" src="assets/images/logo.png" alt="Swamp Adventure" width="357" height="181">
+          </picture>
+        </h1>
+        <p class="tagline">Hop, dodge, and survive!</p>
+        <p class="lede">Guide a brave little frog across a lily-pad-hopping swamp full of snapping gators, hungry birds, and puffed-up fish. Fast, colorful, and endlessly replayable — how far can you hop?</p>
+        <div class="store-badges">
+          <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">
+            ▶ Get it on Google Play
+          </a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <picture>
+          <source srcset="assets/images/hero.webp" type="image/webp">
+          <img src="assets/images/hero.png" alt="Swamp Adventure key art: a frog on a lily pad surrounded by a crocodile, birds, and a pufferfish" width="1672" height="941">
+        </picture>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section><div class="wrap">
+    <h2>Why you'll love it</h2>
+    <p class="section-sub">Swamp Adventure is a quick-to-learn, hard-to-put-down arcade game built for players of every age.</p>
+    <div class="features">
+      <div class="feature-card">
+        <span class="emoji">🐸</span>
+        <h3>Swipe to steer</h3>
+        <p>The frog keeps hopping on its own — just drag to steer between lily pads. Easy to pick up, but mastering the swamp takes real skill.</p>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">🐊</span>
+        <h3>A swamp full of danger</h3>
+        <p>Dodge snapping crocodiles, swooping birds, and spiky pufferfish as the action ramps up.</p>
+      </div>
+      <div class="feature-card">
+        <span class="emoji">🏆</span>
+        <h3>Achievements & leaderboards</h3>
+        <p>Chase high scores, unlock achievements, and climb the leaderboards against players worldwide.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>See it in action</h2>
+    <p class="section-sub">Charming hand-drawn art and frantic, satisfying gameplay.</p>
+    <div class="showcase">
+      <picture>
+        <source srcset="assets/images/hero.webp" type="image/webp">
+        <img src="assets/images/hero.png" alt="Swamp Adventure title art" width="1672" height="941" loading="lazy">
+      </picture>
+      <picture>
+        <source srcset="assets/images/gameplay.webp" type="image/webp">
+        <img src="assets/images/gameplay.png" alt="Swamp Adventure gameplay screenshot" width="1672" height="941" loading="lazy">
+      </picture>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <div class="cta-band">
+      <h2>Ready to hop in?</h2>
+      <p>Swamp Adventure is free to play on Android.</p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">▶ Get it on Google Play</a>
+    </div>
+  </div></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A game by <a href="/">Gryphon Entertainment</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>
