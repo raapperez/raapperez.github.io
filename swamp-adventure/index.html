@@ -190,6 +190,23 @@
   .feature-card h3 { margin: 0 0 8px; font-size: 18px; color: var(--cream); }
   .feature-card p { margin: 0; color: #b9d6c2; font-size: 15px; }
 
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,.4);
+    margin-bottom: 32px;
+  }
+  .video-wrap iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
   .showcase {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -291,6 +308,9 @@
   <section><div class="wrap">
     <h2>See it in action</h2>
     <p class="section-sub">Charming hand-drawn art and frantic, satisfying gameplay.</p>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/GE8Jwyqah9E?si=ky7FhFjMH0qt5o8M" title="Swamp Adventure — YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    </div>
     <div class="showcase">
       <picture>
         <source srcset="assets/images/hero.webp" type="image/webp">
