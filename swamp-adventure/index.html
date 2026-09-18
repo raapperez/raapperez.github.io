@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Swamp Adventure — Gryphon Entertainment</title>
-<meta name="description" content="Swamp Adventure: hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play. Made by Gryphon Entertainment.">
+<meta name="description" content="Swamp Adventure is a free arcade game for Android: steer a lilypad, eat bugs for extra lives and invincibility, stomp birds, hawks and alligators, and freeze the swamp with the Bullet Time clock. Chase combos, achievements and leaderboards.">
 <link rel="canonical" href="https://raapperez.github.io/swamp-adventure/">
 <link rel="icon" href="assets/images/icon.png">
 
@@ -13,24 +13,28 @@
 <meta property="og:site_name" content="Gryphon Entertainment">
 <meta property="og:title" content="Swamp Adventure — Gryphon Entertainment">
 <meta property="og:description" content="Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play.">
-<meta property="og:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
-<meta property="og:image:width" content="1672">
-<meta property="og:image:height" content="941">
+<meta property="og:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.jpg">
+<meta property="og:image:width" content="1100">
+<meta property="og:image:height" content="619">
+<meta property="og:image:type" content="image/jpeg">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Swamp Adventure — Gryphon Entertainment">
 <meta name="twitter:description" content="Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Google Play.">
-<meta name="twitter:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.png">
+<meta name="twitter:image" content="https://raapperez.github.io/swamp-adventure/assets/images/hero.jpg">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Swamp Adventure",
-  "description": "Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish.",
-  "genre": "Arcade",
+  "description": "An endless arcade game where you drag a lilypad under a frog that never stops hopping. Eat bugs for extra lives and invincibility, stomp birds, hawks and alligators, pop pufferfish while invincible, and freeze the swamp with the Bullet Time clock.",
+  "genre": ["Arcade", "Casual", "Action"],
+  "gamePlatform": "Android",
+  "playMode": "SinglePlayer",
+  "inLanguage": ["en", "pt", "es", "fr", "de"],
   "url": "https://raapperez.github.io/swamp-adventure/",
-  "image": "https://raapperez.github.io/swamp-adventure/assets/images/hero.png",
+  "image": "https://raapperez.github.io/swamp-adventure/assets/images/hero.jpg",
   "applicationCategory": "Game",
   "operatingSystem": "Android",
   "offers": {
@@ -48,6 +52,78 @@
     "name": "Gryphon Entertainment",
     "url": "https://raapperez.github.io/"
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Swamp Adventure free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Swamp Adventure is free to download and play on Android from Google Play. It is supported by ads, with optional in-app coin purchases for players who want to unlock upgrades faster — every upgrade can also be earned by playing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you control the frog?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You don't control the frog directly — it hops continuously on its own. You drag the lilypad with one finger and place it where the frog is about to land. That single mechanic is the entire control scheme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you kill a pufferfish?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only while invincible. Eat enough bugs to trigger an invincibility window, then touch the pufferfish while the frog is flashing — it pops for 100 points. Touching one at any other time costs a life."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you get extra lives?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eat bugs. Every 10 bugs restores one life, up to your maximum. Runs start at roughly half your maximum lives, and you can raise that ceiling permanently with coins in the in-game store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the Bullet Time clock do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Collecting the hourglass slows the entire swamp to a tenth of normal speed for a few seconds, while the frog keeps hopping at full pace. Store upgrades make it appear more often and last longer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play without killing anything?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — and two achievements reward it. Bugs still feed you lives and invincibility, so a pacifist run is viable; it is just much harder to score well without combo kills."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it suitable for young children?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Baby Mode removes losing entirely, keeps alligators out of the swamp, and caps the difficulty, so small children can play without frustration. Achievements are disabled in that mode."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an iOS version?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Swamp Adventure is currently available on Android via Google Play."
+      }
+    }
+  ]
 }
 </script>
 <style>
@@ -82,15 +158,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
     padding: 8px 0 24px;
   }
   .brand {
     font-weight: 800;
     letter-spacing: 0.04em;
     font-size: 15px;
+    line-height: 1.25;
     text-transform: uppercase;
     color: var(--leaf-light);
     text-decoration: none;
+    min-width: 0;
   }
   .nav a.cta {
     background: var(--leaf);
@@ -101,6 +180,8 @@
     font-size: 14px;
     text-decoration: none;
     box-shadow: 0 4px 0 #2e7d32;
+    white-space: nowrap;
+    flex: none;
   }
 
   .hero-grid {
@@ -187,6 +268,17 @@
     padding: 24px;
   }
   .feature-card .emoji { font-size: 30px; display: block; margin-bottom: 10px; }
+  .feature-card .sprite {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 84px;
+    max-height: 64px;
+    object-fit: contain;
+    object-position: left bottom;
+    filter: drop-shadow(0 3px 6px rgba(0,0,0,.45));
+  }
+  .feature-card picture { display: flex; align-items: flex-end; height: 64px; margin-bottom: 10px; }
   .feature-card h3 { margin: 0 0 8px; font-size: 18px; color: var(--cream); }
   .feature-card p { margin: 0; color: #b9d6c2; font-size: 15px; }
 
@@ -230,6 +322,72 @@
   .cta-band h2 { margin-bottom: 14px; }
   .cta-band p { color: #d7ecdd; margin: 0 0 28px; }
 
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .cards h3 { margin: 0 0 8px; font-size: 18px; color: var(--cream); }
+  .cards p { margin: 0; color: #b9d6c2; font-size: 15px; }
+  .cards .tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--leaf-light);
+    margin-bottom: 6px;
+  }
+
+  .steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .steps li {
+    background: var(--swamp-mid);
+    border: 1px solid rgba(140, 216, 139, .18);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+  }
+  .steps li::before {
+    counter-increment: step;
+    content: counter(step);
+    display: block;
+    font-weight: 800;
+    font-size: 13px;
+    color: var(--swamp-dark);
+    background: var(--leaf);
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+  .steps h3 { margin: 0 0 8px; font-size: 18px; color: var(--cream); }
+  .steps p { margin: 0; color: #b9d6c2; font-size: 15px; }
+
+  .faq details {
+    background: var(--swamp-mid);
+    border: 1px solid rgba(140, 216, 139, .18);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+  }
+  .faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--cream);
+    font-size: 16px;
+  }
+  .faq details p { color: #b9d6c2; margin: 12px 0 0; font-size: 15px; }
+
   footer {
     padding: 32px 0 48px;
     text-align: center;
@@ -237,6 +395,17 @@
     font-size: 14px;
   }
   footer a { color: var(--leaf-light); text-decoration: none; }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 0 16px; }
+    .brand { font-size: 12px; letter-spacing: 0.02em; }
+    .nav a.cta { font-size: 13px; padding: 8px 14px; }
+  }
+
+  @media (max-width: 380px) {
+    .brand { font-size: 11px; }
+    .nav a.cta { font-size: 12px; padding: 7px 12px; }
+  }
 
   @media (max-width: 860px) {
     .hero-grid { grid-template-columns: 1fr; }
@@ -261,11 +430,11 @@
         <h1>
           <picture>
             <source srcset="assets/images/logo.webp" type="image/webp">
-            <img class="logo-img" src="assets/images/logo.png" alt="Swamp Adventure" width="357" height="181">
+            <img class="logo-img" src="assets/images/logo.png" alt="Swamp Adventure" width="357" height="181" fetchpriority="high" decoding="async">
           </picture>
         </h1>
         <p class="tagline">Hop, dodge, and survive!</p>
-        <p class="lede">Guide a brave little frog across a lily-pad-hopping swamp full of snapping gators, hungry birds, and puffed-up fish. Fast, colorful, and endlessly replayable — how far can you hop?</p>
+        <p class="lede">The frog never stops hopping — you drag its lilypad. Catch bugs with your tongue, stomp birds and alligators, pop pufferfish while invincible, and freeze time with the Bullet Time clock. Fast, colorful, and endlessly replayable — how far can you hop?</p>
         <div class="store-badges">
           <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">
             ▶ Get it on Google Play
@@ -274,8 +443,8 @@
       </div>
       <div class="hero-art">
         <picture>
-          <source srcset="assets/images/hero.webp" type="image/webp">
-          <img src="assets/images/hero.png" alt="Swamp Adventure key art: a frog on a lily pad surrounded by a crocodile, birds, and a pufferfish" width="1672" height="941">
+          <source type="image/webp" srcset="assets/images/hero-480.webp 480w, assets/images/hero-768.webp 768w, assets/images/hero-1100.webp 1100w, assets/images/hero-1440.webp 1440w" sizes="(max-width: 860px) 100vw, 52vw">
+          <img src="assets/images/hero.jpg" alt="Swamp Adventure key art: a frog on a lilypad surrounded by an alligator, jaburu storks, and a pufferfish" width="1672" height="941" fetchpriority="high" decoding="async">
         </picture>
       </div>
     </div>
@@ -290,17 +459,17 @@
       <div class="feature-card">
         <span class="emoji">🐸</span>
         <h3>Swipe to steer</h3>
-        <p>The frog keeps hopping on its own — just drag to steer between lily pads. Easy to pick up, but mastering the swamp takes real skill.</p>
+        <p>The frog hops on its own — your job is to drag the lilypad under it before it lands. One finger, no buttons. Easy to pick up, brutal to master.</p>
       </div>
       <div class="feature-card">
         <span class="emoji">🐊</span>
         <h3>A swamp full of danger</h3>
-        <p>Dodge snapping crocodiles, swooping birds, and spiky pufferfish as the action ramps up.</p>
+        <p>Birds, hawks, alligators and pufferfish arrive faster every ten seconds. Some you dodge, some you stomp — knowing which is the whole game.</p>
       </div>
       <div class="feature-card">
         <span class="emoji">🏆</span>
         <h3>Achievements & leaderboards</h3>
-        <p>Chase high scores, unlock achievements, and climb the leaderboards against players worldwide.</p>
+        <p>26 achievements, Google Play leaderboards, and a combo multiplier that turns a clean streak into a massive score.</p>
       </div>
     </div>
   </div></section>
@@ -313,14 +482,244 @@
     </div>
     <div class="showcase">
       <picture>
-        <source srcset="assets/images/hero.webp" type="image/webp">
-        <img src="assets/images/hero.png" alt="Swamp Adventure title art" width="1672" height="941" loading="lazy">
+        <source type="image/webp" srcset="assets/images/hero-480.webp 480w, assets/images/hero-768.webp 768w, assets/images/hero-1100.webp 1100w, assets/images/hero-1440.webp 1440w" sizes="(max-width: 860px) 100vw, 50vw">
+        <img src="assets/images/hero.jpg" alt="Swamp Adventure title art showing the frog, lilypads and swamp enemies" width="1672" height="941" loading="lazy" decoding="async">
       </picture>
       <picture>
-        <source srcset="assets/images/gameplay.webp" type="image/webp">
-        <img src="assets/images/gameplay.png" alt="Swamp Adventure gameplay screenshot" width="1672" height="941" loading="lazy">
+        <source type="image/webp" srcset="assets/images/gameplay-480.webp 480w, assets/images/gameplay-768.webp 768w, assets/images/gameplay-1100.webp 1100w, assets/images/gameplay-1440.webp 1440w" sizes="(max-width: 860px) 100vw, 50vw">
+        <img src="assets/images/gameplay.jpg" alt="Swamp Adventure gameplay: the frog hopping between lilypads while dodging swamp enemies" width="1672" height="941" loading="lazy" decoding="async">
       </picture>
     </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>How to play</h2>
+    <p class="section-sub">There are no buttons and no jump control. The frog hops by itself, and everything you do happens in the split second it is in the air.</p>
+    <ol class="steps">
+      <li>
+        <h3>Drag the lilypad</h3>
+        <p>Your finger controls the lilypad, not the frog. Slide it under the frog before it comes down &mdash; miss, and the frog lands in the water and loses a life.</p>
+      </li>
+      <li>
+        <h3>Land on something alive</h3>
+        <p>A lilypad is safe, but a bird, a hawk or an alligator's back is worth far more. Landing on an enemy kills it and keeps your streak going.</p>
+      </li>
+      <li>
+        <h3>Build the combo</h3>
+        <p>Every kill in a row raises your combo, and the combo multiplies every point you score afterwards. Touch a plain lilypad and the combo resets to zero.</p>
+      </li>
+      <li>
+        <h3>Survive the ramp</h3>
+        <p>The level goes up every ten seconds, forever. New enemy types unlock as you climb and the swamp keeps filling up &mdash; there is no finish line, only your best run.</p>
+      </li>
+    </ol>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Who lives in the swamp</h2>
+    <p class="section-sub">Five creatures share the water, and each one wants something different from you. Learning which to stomp and which to flee is most of the skill curve.</p>
+    <div class="cards">
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/jaburu.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/jaburu.png" alt="A jaburu stork, the common bird enemy in Swamp Adventure" width="160" height="130" loading="lazy">
+        </picture>
+        <span class="tag">1 point &middot; stompable</span>
+        <h3>Birds</h3>
+        <p>The swamp's bread and butter &mdash; jaburu storks, the long-billed waders of the Brazilian wetlands. They flap across in loose arcs from the very first level and are the easiest way to keep a combo alive. Up to eight can share the screen at high levels.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/hawk.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/hawk.png" alt="A diving hawk, the fast high-value enemy in Swamp Adventure" width="78" height="107" loading="lazy">
+        </picture>
+        <span class="tag">10 points &middot; stompable</span>
+        <h3>Hawks</h3>
+        <p>They show up around level 6 and dive far faster than the birds. Worth ten times as much, but they cross the screen so quickly that timing a landing on one is a genuine skill check.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/alligator.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/alligator.png" alt="An alligator patrolling the water in Swamp Adventure" width="145" height="88" loading="lazy">
+        </picture>
+        <span class="tag">25 points &middot; back only</span>
+        <h3>Alligators</h3>
+        <p>From level 10 onwards a gator patrols the water. You can ride it by landing on its back &mdash; but if your lilypad drifts into its head, the frog is eaten instantly and the run ends, no matter how many lives you had.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pufferfish.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pufferfish.png" alt="A puffed-up pufferfish, only killable while invincible" width="116" height="107" loading="lazy">
+        </picture>
+        <span class="tag">100 points &middot; invincible only</span>
+        <h3>Pufferfish</h3>
+        <p>Spiky, and unkillable by normal means &mdash; touching one costs a life. Only an invincible frog can pop a pufferfish, and doing so is worth a hundred points. Up to four bob around at once in the late game.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/bug.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/bug.png" alt="A firefly, the bug the frog eats for lives and invincibility" width="53" height="46" loading="lazy">
+        </picture>
+        <span class="tag">20 points &middot; food</span>
+        <h3>Bugs</h3>
+        <p>Not a threat &mdash; a resource. Get close and the frog's tongue shoots out on its own to snatch one. Bugs are the engine behind both extra lives and invincibility, so chasing them is always worth the detour.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Power-ups and extra lives</h2>
+    <p class="section-sub">Swamp Adventure has no shop-bought consumables mid-run. Every advantage you get, you earn with your tongue.</p>
+    <div class="cards">
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-invincible.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-invincible.png" alt="Invincibility star power-up icon" width="153" height="138" loading="lazy" decoding="async">
+        </picture>
+        <h3>Invincibility</h3>
+        <p>Eat enough bugs and the frog flashes and turns invincible for a few seconds. While it lasts, nothing in the swamp can hurt you: you plough straight through alligator backs, and pufferfish &mdash; normally lethal &mdash; pop on contact for 100 points each.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-chain.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-chain.png" alt="Invincibility duration star and hourglass icon" width="153" height="138" loading="lazy" decoding="async">
+        </picture>
+        <h3>Invincible kill chains</h3>
+        <p>Kills made during invincibility stack a separate bonus on top of your combo: each consecutive one adds another ten points to every kill that follows. A well-spent invincibility window is where the big scores come from.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-clock.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-clock.png" alt="The Bullet Time clock power-up icon" width="153" height="137" loading="lazy" decoding="async">
+        </picture>
+        <h3>The Bullet Time clock</h3>
+        <p>A rare hourglass drifts through the swamp. Grab it and the whole world decelerates to a tenth of its speed &mdash; enemies, animations, everything but you. It is the only way to untangle a screen that has become impossible, and stacking twenty of them in one run is its own achievement.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-life.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-life.png" alt="Extra life heart icon" width="153" height="130" loading="lazy" decoding="async">
+        </picture>
+        <h3>Extra lives</h3>
+        <p>Every 10 bugs eaten grants a life back, up to your maximum. If you are already at full health the life converts into 50 bonus points instead, so bugs are never wasted.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-tongue.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-tongue.png" alt="The frog's tongue reach upgrade icon" width="160" height="136" loading="lazy" decoding="async">
+        </picture>
+        <h3>Tongue reach</h3>
+        <p>The frog's tongue has a fixed radius and fires automatically at the nearest bug inside it. Upgrading its size in the store widens that radius, which quietly makes every other power-up easier to reach.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/pw-coin.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/pw-coin.png" alt="Swamp Adventure store coin" width="90" height="96" loading="lazy" decoding="async">
+        </picture>
+        <h3>Coins and upgrades</h3>
+        <p>Every 100 points you score becomes a coin. Spend them on permanent upgrades: longer invincibility, more frequent clocks, longer freezes, a bigger tongue, or a higher maximum life count.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Three ways to play</h2>
+    <p class="section-sub">Same swamp, very different pressure.</p>
+    <div class="cards">
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/mode-normal.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/mode-normal.png" alt="The frog, as played in Normal Mode" width="96" height="94" loading="lazy" decoding="async">
+        </picture>
+        <h3>Normal Mode</h3>
+        <p>Start at level 1 and climb. Enemies unlock gradually &mdash; birds from the start, hawks around level 6, alligators at level 10, a second gator at level 30 &mdash; so the swamp teaches you as it tightens.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/mode-baby.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/mode-baby.png" alt="Baby Mode icon: a jaburu wearing a pacifier" width="153" height="96" loading="lazy" decoding="async">
+        </picture>
+        <h3>Baby Mode</h3>
+        <p>Made for small kids. You can never lose, alligators stay out of the water entirely, and the difficulty plateaus so the screen never becomes overwhelming. Achievements are switched off in exchange.</p>
+      </div>
+      <div class="feature-card">
+        <picture>
+          <source srcset="assets/images/sprites/mode-hard.webp" type="image/webp">
+          <img class="sprite" src="assets/images/sprites/mode-hard.png" alt="Hard Mode icon: a ninja frog with katanas" width="109" height="135" loading="lazy" decoding="async">
+        </picture>
+        <h3>Hard Mode</h3>
+        <p>Start at level 10, with the hawks and the first alligator already in play, and every point worth 1.5x. For players who find the opening minutes of a normal run too quiet.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Achievements to chase</h2>
+    <p class="section-sub">Twenty-six Google Play achievements, most of them asking you to play in a specific way rather than simply play a lot.</p>
+    <div class="cards">
+      <div class="feature-card">
+        <h3>A Peaceful NINJA Frog</h3>
+        <p>Reach level 20 without killing a single bird, pufferfish or alligator. A whole pacifist run, with none of the easy combo points.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Just Like C. Norris</h3>
+        <p>Kill 15 enemies while invincible &mdash; the hardest scoring feat in the game.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Eat ALL The Bugs!</h3>
+        <p>Eat 100 bugs in one match. That is ten extra lives and a long string of invincibility windows along the way.</p>
+      </div>
+      <div class="feature-card">
+        <h3>King Of The Lake</h3>
+        <p>Reach level 50 &mdash; roughly eight minutes of unbroken survival in a swamp that never stops filling up.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Like Dr. Brown</h3>
+        <p>Collect 20 Bullet Time clocks in a single run. They spawn rarely, so this one rewards upgrading the clock probability first.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Master Jumper</h3>
+        <p>Chain a 20-kill combo without touching a plain lilypad. Twenty consecutive landings on living things.</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="faq"><div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <p class="section-sub">Everything players ask before they download.</p>
+
+    <details>
+      <summary>Is Swamp Adventure free?</summary>
+      <p>Yes. Swamp Adventure is free to download and play on Android from Google Play. It is supported by ads, with optional in-app coin purchases for players who want to unlock upgrades faster &mdash; every upgrade can also be earned by playing.</p>
+    </details>
+    <details>
+      <summary>How do you control the frog?</summary>
+      <p>You don't control the frog directly &mdash; it hops continuously on its own. You drag the lilypad with one finger and place it where the frog is about to land. That single mechanic is the entire control scheme.</p>
+    </details>
+    <details>
+      <summary>How do you kill a pufferfish?</summary>
+      <p>Only while invincible. Eat enough bugs to trigger an invincibility window, then touch the pufferfish while the frog is flashing &mdash; it pops for 100 points. Touching one at any other time costs a life.</p>
+    </details>
+    <details>
+      <summary>How do you get extra lives?</summary>
+      <p>Eat bugs. Every 10 bugs restores one life, up to your maximum. Runs start at roughly half your maximum lives, and you can raise that ceiling permanently with coins in the in-game store.</p>
+    </details>
+    <details>
+      <summary>What does the Bullet Time clock do?</summary>
+      <p>Collecting the hourglass slows the entire swamp to a tenth of normal speed for a few seconds, while the frog keeps hopping at full pace. Store upgrades make it appear more often and last longer.</p>
+    </details>
+    <details>
+      <summary>Can I play without killing anything?</summary>
+      <p>Yes &mdash; and two achievements reward it. Bugs still feed you lives and invincibility, so a pacifist run is viable; it is just much harder to score well without combo kills.</p>
+    </details>
+    <details>
+      <summary>Is it suitable for young children?</summary>
+      <p>Yes. Baby Mode removes losing entirely, keeps alligators out of the swamp, and caps the difficulty, so small children can play without frustration. Achievements are disabled in that mode.</p>
+    </details>
+    <details>
+      <summary>Is there an iOS version?</summary>
+      <p>Swamp Adventure is currently available on Android via Google Play.</p>
+    </details>
   </div></section>
 
   <section><div class="wrap">
