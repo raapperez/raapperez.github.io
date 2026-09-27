@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videos — Gryphon Entertainment</title>
+<meta name="description" content="Cinematic full races, scenic drives and car Shorts from racing games, each with its own original soundtrack and no commentary. Watch on the Gryphon YouTube channel.">
+<link rel="canonical" href="https://raapperez.github.io/videos/">
+<link rel="icon" href="/assets/images/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raapperez.github.io/videos/">
+<meta property="og:site_name" content="Gryphon Entertainment">
+<meta property="og:title" content="Videos — Gryphon Entertainment">
+<meta property="og:description" content="Cinematic full races, scenic drives and car Shorts, each with an original soundtrack. No commentary.">
+<meta property="og:image" content="https://raapperez.github.io/videos/assets/images/cover.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
+<meta property="og:image:type" content="image/jpeg">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Videos — Gryphon Entertainment">
+<meta name="twitter:description" content="Cinematic full races, scenic drives and car Shorts, each with an original soundtrack. No commentary.">
+<meta name="twitter:image" content="https://raapperez.github.io/videos/assets/images/cover.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Videos — Gryphon Entertainment",
+  "url": "https://raapperez.github.io/videos/",
+  "description": "Cinematic full races, scenic drives and car Shorts from racing games, each with its own original soundtrack.",
+  "isPartOf": { "@type": "WebSite", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Gryphon Entertainment",
+    "url": "https://raapperez.github.io/",
+    "sameAs": ["https://www.youtube.com/@gryph86"]
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --asphalt: #0f1012;
+    --tarmac: #17191c;
+    --line: #2b2f36;
+    --red: #e10600;
+    --red-hot: #ff2d1f;
+    --amber: #ffb400;
+    --chalk: #f2f2f0;
+    --muted: #a7acb4;
+    --display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--asphalt);
+    color: var(--chalk);
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; width: 100%; }
+
+  header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .brand {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 800;
+    letter-spacing: .06em;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .brand span { color: var(--red); }
+
+  .hero {
+    min-height: 360px;
+    display: flex;
+    align-items: flex-end;
+    background:
+      linear-gradient(180deg, rgba(15,16,18,.1) 0%, rgba(15,16,18,.55) 55%, var(--asphalt) 100%),
+      url("assets/images/hero.jpg") center 60% / cover no-repeat;
+  }
+  @supports (background-image: image-set(url("x.webp") type("image/webp"))) {
+    .hero {
+      background:
+        linear-gradient(180deg, rgba(15,16,18,.1) 0%, rgba(15,16,18,.55) 55%, var(--asphalt) 100%),
+        image-set(url("assets/images/hero.webp") type("image/webp"),
+                  url("assets/images/hero.jpg") type("image/jpeg")) center 60% / cover no-repeat;
+    }
+  }
+  .hero .wrap { padding-bottom: 32px; }
+  .kicker {
+    display: inline-block;
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 15px;
+    color: var(--asphalt);
+    background: var(--amber);
+    padding: 2px 12px;
+    margin-bottom: 12px;
+    clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+  }
+  h1 {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: clamp(44px, 9vw, 76px);
+    line-height: .95;
+    margin: 0;
+    text-shadow: 0 2px 18px rgba(0,0,0,.5);
+  }
+  h1 em { color: var(--red); }
+  .checker {
+    height: 14px;
+    background: repeating-conic-gradient(var(--chalk) 0 25%, var(--asphalt) 0 50%) 0 0 / 14px 14px;
+  }
+  .stripe {
+    height: 6px;
+    background: linear-gradient(90deg, var(--red) 0 70%, var(--amber) 70% 85%, var(--chalk) 85% 100%);
+  }
+
+  main { flex: 1; padding-bottom: 56px; }
+  .intro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 32px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+  .lede { font-size: 18px; color: var(--muted); max-width: 58ch; margin: 0; }
+  .subscribe {
+    flex: none;
+    background: var(--red);
+    color: #fff;
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    text-decoration: none;
+    padding: 10px 28px;
+    clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+    transition: background .15s ease;
+  }
+  .subscribe:hover, .subscribe:focus-visible { background: var(--red-hot); }
+
+  section {
+    margin-top: 44px;
+    background: var(--tarmac);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--red);
+    padding: 22px;
+  }
+  section.shorts { border-left-color: var(--amber); }
+  .lap {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  section h2 {
+    font-family: var(--display);
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 1.05;
+    margin: 2px 0 8px;
+  }
+  section p { color: var(--muted); margin: 0 0 18px; max-width: 60ch; }
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 14px 30px rgba(0,0,0,.5);
+  }
+  .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .more {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--amber);
+    text-decoration: none;
+  }
+  .more:hover { text-decoration: underline; }
+
+  footer {
+    padding: 20px 0 28px;
+    text-align: center;
+    color: #6f747c;
+    font-size: 13px;
+    border-top: 1px solid var(--line);
+  }
+  footer a { color: var(--muted); }
+
+  @media (max-width: 560px) {
+    .hero { min-height: 380px; background-position: center, 55% 35%; }
+    section { padding: 16px; }
+    section h2 { font-size: 26px; }
+    .subscribe { width: 100%; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">Gryphon <span>Entertainment</span></a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">No commentary · Original soundtracks</div>
+    <h1>Races &amp; <em>Scenic</em> Drives</h1>
+  </div>
+</div>
+<div class="checker" aria-hidden="true"></div>
+<div class="stripe" aria-hidden="true"></div>
+
+<main>
+  <div class="wrap">
+    <div class="intro">
+      <p class="lede">Full races and scenic drives from racing games, cut between the chase camera and the cockpit. Every film has its own original soundtrack, so you can watch closely or just leave it on and relax.</p>
+      <a class="subscribe" href="https://www.youtube.com/@gryph86?sub_confirmation=1" rel="noopener" target="_blank">Subscribe on YouTube</a>
+    </div>
+
+    <section>
+      <div class="lap">Playlist 01 · Full films</div>
+      <h2>Relaxing Full Races &amp; Scenic Drives</h2>
+      <p>Full-length films, from a few minutes to half an hour. New ones every week.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcOSmGDx0pAU" title="Relaxing Full Races &amp; Scenic Drives — YouTube playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <a class="more" href="https://www.youtube.com/playlist?list=PLcOSmGDx0pAU" rel="noopener" target="_blank">Open the playlist on YouTube →</a>
+    </section>
+
+    <section class="shorts">
+      <div class="lap">Playlist 02 · Shorts</div>
+      <h2>Car Shorts | Racing &amp; Music</h2>
+      <p>Thirty-second clips: cockpit views, chase cams and scenic moments, each set to its own track.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLOZ-TUDtepo0" title="Car Shorts | Racing &amp; Music — YouTube playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <a class="more" href="https://www.youtube.com/playlist?list=PLOZ-TUDtepo0" rel="noopener" target="_blank">Open the playlist on YouTube →</a>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; Gryphon Entertainment · <a href="/">Games</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

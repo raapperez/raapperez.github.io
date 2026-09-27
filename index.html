@@ -29,7 +29,8 @@
   "name": "Gryphon Entertainment",
   "url": "https://raapperez.github.io/",
   "sameAs": [
-    "https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure"
+    "https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure",
+    "https://www.youtube.com/@gryph86"
   ]
 }
 </script>
@@ -97,6 +98,7 @@
     text-decoration: none;
     transition: transform .15s ease, border-color .15s ease;
   }
+  .game-card + .game-card { margin-top: 16px; }
   .game-card:hover {
     transform: translateY(-2px);
     border-color: var(--leaf);
@@ -160,6 +162,18 @@
           <h2>Swamp Adventure</h2>
           <p>Hop, dodge, and survive as a frog through a wild swamp full of crocodiles, birds, and pufferfish. Free on Android.</p>
           <span class="play-cta">See the game →</span>
+        </div>
+      </a>
+
+      <a class="game-card" href="/videos/">
+        <picture>
+          <source srcset="videos/assets/images/cover.webp" type="image/webp">
+          <img src="videos/assets/images/cover.jpg" alt="A rally hatchback parked by a café terrace" width="1280" height="720" loading="lazy">
+        </picture>
+        <div class="game-info">
+          <h2>Videos</h2>
+          <p>Cinematic full races, scenic drives and car Shorts from racing games, each with its own original soundtrack. No commentary.</p>
+          <span class="play-cta">Watch the videos →</span>
         </div>
       </a>
     </div>
