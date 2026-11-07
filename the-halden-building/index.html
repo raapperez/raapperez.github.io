@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Halden Building — Gryphon Entertainment</title>
+<meta name="description" content="The Halden Building is a psychological horror mystery for Android. You are the new superintendent of a flooded apartment block. Twelve tenants. Seven nights.">
+<link rel="canonical" href="https://raapperez.github.io/the-halden-building/">
+<link rel="icon" href="assets/images/icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raapperez.github.io/the-halden-building/">
+<meta property="og:site_name" content="Gryphon Entertainment">
+<meta property="og:title" content="The Halden Building — Gryphon Entertainment">
+<meta property="og:description" content="You are the new superintendent. The street is under water. Twelve tenants. Seven nights.">
+<meta property="og:image" content="https://raapperez.github.io/the-halden-building/assets/images/hero.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="450">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "The Halden Building",
+  "description": "A psychological horror mystery. You are the new superintendent of a flooded apartment block, with twelve tenants and seven nights.",
+  "genre": ["Horror", "Adventure", "Mystery"],
+  "gamePlatform": "Android",
+  "playMode": "SinglePlayer",
+  "url": "https://raapperez.github.io/the-halden-building/",
+  "image": "https://raapperez.github.io/the-halden-building/assets/images/hero.jpg",
+  "author": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
+  "publisher": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" }
+}
+</script>
+<style>
+  :root {
+    --ink: #0a0908;
+    --panel: #15120f;
+    --paper: #e8dcc4;
+    --dim: #a89a82;
+    --blood: #a0140a;
+    --line: #3a332a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; width: 100%; }
+
+  header { padding: 24px 0; }
+  .brand { font: 700 13px/1 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--dim); text-decoration: none; }
+
+  .hero { position: relative; border: 1px solid var(--line); overflow: hidden; }
+  .hero img { display: block; width: 100%; height: auto; }
+  .hero::after { content: ''; position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(10,9,8,.92) 0%, rgba(10,9,8,.55) 45%, rgba(10,9,8,0) 75%); }
+  .hero .text { position: absolute; z-index: 1; left: 0; top: 50%; transform: translateY(-50%); padding: 0 6%; max-width: 30em; }
+  h1 { margin: 0; font-weight: 600; font-size: clamp(26px, 6vw, 52px); line-height: 1.05; letter-spacing: .16em;
+    text-shadow: 0 0 18px rgba(160, 20, 10, .55); }
+  .tagline { font-style: italic; color: var(--dim); margin: .8em 0 0; font-size: clamp(14px, 2vw, 17px); }
+
+  main { flex: 1; }
+  section { padding: 32px 0 8px; }
+  h2 { font-weight: 600; font-size: 20px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; color: var(--paper); }
+  p { margin: 0 0 1em; color: #d4c8b0; }
+  ul { padding-left: 1.2em; color: #d4c8b0; }
+  li { margin: .3em 0; }
+
+  .badge { display: inline-block; margin-top: 8px; padding: 12px 22px; border: 1px solid var(--blood);
+    color: var(--paper); text-decoration: none; letter-spacing: .1em; text-transform: uppercase; font-size: 14px;
+    transition: background .2s; }
+  .badge:hover { background: rgba(160, 20, 10, .25); }
+  .soon { font-size: 13px; color: var(--dim); margin-top: 10px; }
+
+  footer { padding: 40px 0 32px; text-align: center; color: var(--dim); font-size: 13px; }
+  footer a { margin: 0 8px; }
+
+  /* on phones the title goes under the picture instead of over it */
+  @media (max-width: 600px) {
+    .hero::after { display: none; }
+    .hero .text { position: static; transform: none; padding: 20px 16px; max-width: none; background: var(--panel); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap"><a class="brand" href="/">Gryphon Entertainment</a></div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <img src="assets/images/hero.jpg" alt="A dim apartment corridor lit by a single bare bulb" width="800" height="450">
+      <div class="text">
+        <h1>THE HALDEN<br>BUILDING</h1>
+        <p class="tagline">You are the new superintendent. The street is under water. Twelve tenants. Seven nights.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>The Game</h2>
+      <p>The Halden Building is a first-person psychological horror mystery. The city has flooded, and you have just taken the job of superintendent in an old apartment block. By day you keep the building running and listen to the tenants. By night, something in the building starts to move.</p>
+      <p>Every tenant has a story, an alibi and something to hide. Find out what happened in the Halden Building before the last night.</p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.thehaldenbuilding">▶ Get it on Google Play</a>
+      <p class="soon">Coming soon to Android.</p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <ul>
+        <li>Seven days and seven nights in a single building, floor by floor.</li>
+        <li>Twelve tenants to talk to, suspect and protect.</li>
+        <li>Several endings, with new options unlocked as you find them.</li>
+        <li>A retro, low-poly look inspired by classic horror games.</li>
+        <li>Plays fully offline, with touch or gamepad controls.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Content Advisory</h2>
+      <p>Contains frightening scenes, themes of violence and death, sudden loud sounds and flickering lights. Intended for players aged 13 and over.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A game by <a href="/">Gryphon Entertainment</a></p>
+    <p><a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Use</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
