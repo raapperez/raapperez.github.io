@@ -36,17 +36,17 @@
 </script>
 <style>
   :root {
-    --swamp-dark: #0b2b1f;
-    --swamp-mid: #123d29;
-    --leaf: #4caf50;
-    --leaf-light: #8bd88b;
+    --bg: #0b1418;
+    --panel: #13222a;
+    --gold: #c9a24a;
+    --gold-light: #e6c77a;
     --cream: #fdf6e3;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: var(--swamp-dark);
+    background: var(--bg);
     color: var(--cream);
     line-height: 1.5;
     min-height: 100vh;
@@ -64,7 +64,7 @@
     letter-spacing: 0.04em;
     font-size: 15px;
     text-transform: uppercase;
-    color: var(--leaf-light);
+    color: var(--gold-light);
     text-decoration: none;
   }
 
@@ -81,7 +81,7 @@
   }
   .intro p.lede {
     font-size: 18px;
-    color: #b9d6c2;
+    color: #b4c6cc;
     max-width: 56ch;
     margin: 0 0 40px;
   }
@@ -89,7 +89,7 @@
   .studio { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: center; margin-bottom: 40px; }
   .studio .crest { order: 2; }
   .studio .crest img { width: 100%; height: auto; display: block; border-radius: 16px;
-    border: 1px solid rgba(140, 216, 139, .18); box-shadow: 0 10px 40px rgba(0, 0, 0, .5); }
+    border: 1px solid rgba(201, 162, 74, .2); box-shadow: 0 10px 40px rgba(0, 0, 0, .5); }
   .studio .lede { margin-bottom: 0; }
   @media (max-width: 600px) {
     .studio { grid-template-columns: 1fr; gap: 20px; }
@@ -101,8 +101,8 @@
     grid-template-columns: 220px 1fr;
     gap: 24px;
     align-items: center;
-    background: var(--swamp-mid);
-    border: 1px solid rgba(140, 216, 139, .18);
+    background: var(--panel);
+    border: 1px solid rgba(201, 162, 74, .2);
     border-radius: 16px;
     padding: 20px;
     text-decoration: none;
@@ -111,7 +111,7 @@
   .game-card + .game-card { margin-top: 16px; }
   .game-card:hover {
     transform: translateY(-2px);
-    border-color: var(--leaf);
+    border-color: var(--gold);
   }
   .game-card img {
     width: 100%;
@@ -122,11 +122,11 @@
   .game-card .game-info h2 {
     margin: 0 0 8px;
     font-size: 22px;
-    color: var(--leaf-light);
+    color: var(--gold-light);
   }
   .game-card .game-info p {
     margin: 0;
-    color: #b9d6c2;
+    color: #b4c6cc;
     font-size: 15px;
   }
   .game-card .game-info .play-cta {
@@ -134,13 +134,13 @@
     margin-top: 14px;
     font-weight: 700;
     font-size: 14px;
-    color: var(--leaf);
+    color: var(--gold);
   }
 
   footer {
     padding: 24px 0 32px;
     text-align: center;
-    color: #7fa38a;
+    color: #7d9298;
     font-size: 13px;
   }
 
