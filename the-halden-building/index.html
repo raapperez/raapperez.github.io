@@ -14,9 +14,10 @@
 <meta property="og:site_name" content="Gryphon Entertainment">
 <meta property="og:title" content="The Halden Building — Gryphon Entertainment">
 <meta property="og:description" content="You are the new superintendent. The street is under water. Twelve tenants. Seven nights.">
-<meta property="og:image" content="https://raapperez.github.io/the-halden-building/assets/images/hero.jpg">
-<meta property="og:image:width" content="800">
-<meta property="og:image:height" content="450">
+<meta property="og:image" content="https://raapperez.github.io/the-halden-building/assets/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="A man with a flashlight wades through a flooded street toward an old brick apartment building at night">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -29,7 +30,7 @@
   "gamePlatform": "Android",
   "playMode": "SinglePlayer",
   "url": "https://raapperez.github.io/the-halden-building/",
-  "image": "https://raapperez.github.io/the-halden-building/assets/images/hero.jpg",
+  "image": "https://raapperez.github.io/the-halden-building/assets/images/keyart.jpg",
   "author": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
   "publisher": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
   "operatingSystem": "Android",
@@ -76,7 +77,7 @@
     text-transform: uppercase; color: var(--dim); text-decoration: none; }
 
   .hero { position: relative; border: 1px solid var(--line); overflow: hidden; }
-  .hero img { display: block; width: 100%; height: auto; }
+  .hero img, .shot img { display: block; width: 100%; height: auto; }
   .hero::after { content: ''; position: absolute; inset: 0;
     background: linear-gradient(90deg, rgba(10,9,8,.92) 0%, rgba(10,9,8,.55) 45%, rgba(10,9,8,0) 75%); }
   .hero .text { position: absolute; z-index: 1; left: 0; top: 50%; transform: translateY(-50%); padding: 0 6%; max-width: 30em; }
@@ -97,6 +98,8 @@
   .badge:hover { background: rgba(160, 20, 10, .25); }
   .soon { font-size: 13px; color: var(--dim); margin-top: 10px; }
 
+  .shot { display: block; border: 1px solid var(--line); margin: 0 0 16px; }
+  .shot img { width: 100%; height: auto; }
   .tenants { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
   .tenant { position: relative; background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
   .tenant h3 { margin: 0; font-size: 17px; font-weight: 600; }
@@ -125,7 +128,7 @@
 <main>
   <div class="wrap">
     <div class="hero">
-      <img src="assets/images/hero.jpg" alt="A dim apartment corridor lit by a single bare bulb" width="800" height="450">
+      <picture class=""><source srcset="assets/images/building.webp" type="image/webp"><img src="assets/images/building.jpg" alt="The Halden Building at night, an old brick apartment block standing in floodwater under the moon" width="1672" height="941"></picture>
       <div class="text">
         <h1>THE HALDEN<br>BUILDING</h1>
         <p class="tagline">You are the new superintendent. The street is under water. Twelve tenants. Seven nights.</p>
@@ -142,6 +145,7 @@
 
     <section>
       <h2>Features</h2>
+      <picture class="shot"><source srcset="assets/images/crime-scene.webp" type="image/webp"><img src="assets/images/crime-scene.jpg" alt="A tenant's apartment after a disappearance: an overturned chair, a blood trail and an open panel in the wall" width="1672" height="941" loading="lazy"></picture>
       <ul>
         <li>Seven days and seven nights in a single building, floor by floor.</li>
         <li>Twelve tenants to talk to, suspect and protect.</li>
@@ -153,6 +157,7 @@
 
     <section>
       <h2>The Tenants</h2>
+      <picture class="shot"><source srcset="assets/images/board.webp" type="image/webp"><img src="assets/images/board.jpg" alt="The evidence board: twelve blank photos joined by red string, lit by a flashlight" width="1672" height="941" loading="lazy"></picture>
       <p>Twelve women live in the Halden Building. One of them is a killer, and it's a different one every time you play.</p>
       <div class="tenants">
         <div class="tenant"><span class="apt">1A</span><h3>Helena Moraes</h3><p class="role">Retired piano teacher, 68</p><q>The building hums in C sharp. Have you noticed?</q></div>
@@ -172,6 +177,7 @@
 
     <section>
       <h2>Finding the Endings</h2>
+      <picture class="shot"><source srcset="assets/images/basement.webp" type="image/webp"><img src="assets/images/basement.jpg" alt="The basement on the last night: an iron door, a hanging payphone and a cassette tape on the wet floor" width="1672" height="941" loading="lazy"></picture>
       <p>There are eight endings. Each one you find unlocks something new for your next run. A few tips, without spoilers:</p>
       <ul>
         <li><strong>Naming her isn't enough.</strong> The police need proof. Fill your journal before you pick up the lobby payphone.</li>
