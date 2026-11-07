@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Halden Building — Gryphon Entertainment</title>
-<meta name="description" content="The Halden Building is a psychological horror mystery for Android. You are the new superintendent of a flooded apartment block. Twelve tenants. Seven nights.">
+<title>The Halden Building — PS1-Style Horror Mystery Game for Android</title>
+<meta name="description" content="The Halden Building is a first-person PS1-style psychological horror mystery for Android. Twelve tenants, one hidden killer, seven nights and eight endings. Find the proof before the last night.">
+<meta name="theme-color" content="#0a0908">
 <link rel="canonical" href="https://raapperez.github.io/the-halden-building/">
 <link rel="icon" href="assets/images/icon.png">
 
@@ -30,7 +31,21 @@
   "url": "https://raapperez.github.io/the-halden-building/",
   "image": "https://raapperez.github.io/the-halden-building/assets/images/hero.jpg",
   "author": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
-  "publisher": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" }
+  "publisher": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
+  "operatingSystem": "Android",
+  "applicationCategory": "GameApplication",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.gryphon.thehaldenbuilding",
+  "contentRating": "Ages 13+",
+  "inLanguage": "en",
+  "keywords": "horror game, mystery game, PS1 horror, retro horror, murder mystery, detective game, Android horror game, offline game",
+  "character": [
+    { "@type": "Person", "name": "Helena Moraes" }, { "@type": "Person", "name": "Clara Venn" },
+    { "@type": "Person", "name": "Ruth Okafor" }, { "@type": "Person", "name": "Iris Lund" },
+    { "@type": "Person", "name": "Marta Kowal" }, { "@type": "Person", "name": "Yuki Tanabe" },
+    { "@type": "Person", "name": "Dolores Reyes" }, { "@type": "Person", "name": "Nadia Petrova" },
+    { "@type": "Person", "name": "Beatrice Hale" }, { "@type": "Person", "name": "Sofia Albuquerque" },
+    { "@type": "Person", "name": "Agnes Weller" }, { "@type": "Person", "name": "Lena Varga" }
+  ]
 }
 </script>
 <style>
@@ -82,6 +97,15 @@
   .badge:hover { background: rgba(160, 20, 10, .25); }
   .soon { font-size: 13px; color: var(--dim); margin-top: 10px; }
 
+  .tenants { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .tenant { position: relative; background: var(--panel); border: 1px solid var(--line); padding: 14px 16px; }
+  .tenant h3 { margin: 0; font-size: 17px; font-weight: 600; }
+  .tenant .role { margin: 2px 0 8px; font-size: 13px; color: var(--dim); }
+  .tenant q { display: block; font-style: italic; font-size: 14px; color: #d4c8b0; }
+  .tenant .apt { position: absolute; top: 12px; right: 14px; font: 700 12px/1 -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--blood); letter-spacing: .1em; }
+  strong { color: var(--paper); }
+
   footer { padding: 40px 0 32px; text-align: center; color: var(--dim); font-size: 13px; }
   footer a { margin: 0 8px; }
 
@@ -124,6 +148,37 @@
         <li>Several endings, with new options unlocked as you find them.</li>
         <li>A retro, low-poly look inspired by classic horror games.</li>
         <li>Plays fully offline, with touch or gamepad controls.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>The Tenants</h2>
+      <p>Twelve women live in the Halden Building. One of them is a killer, and it's a different one every time you play.</p>
+      <div class="tenants">
+        <div class="tenant"><span class="apt">1A</span><h3>Helena Moraes</h3><p class="role">Retired piano teacher, 68</p><q>The building hums in C sharp. Have you noticed?</q></div>
+        <div class="tenant"><span class="apt">1B</span><h3>Clara Venn</h3><p class="role">Night-shift nurse, 34</p><q>You look tired. I could give you something for that.</q></div>
+        <div class="tenant"><span class="apt">1C</span><h3>Ruth Okafor</h3><p class="role">Taxidermist, 52</p><q>Everything can be kept, if you are patient enough.</q></div>
+        <div class="tenant"><span class="apt">1D</span><h3>Iris Lund</h3><p class="role">Painter, 24</p><q>I paint people when they are not looking. That's when they are honest.</q></div>
+        <div class="tenant"><span class="apt">2A</span><h3>Marta Kowal</h3><p class="role">Seamstress, 45</p><q>Thread remembers the hands that pulled it.</q></div>
+        <div class="tenant"><span class="apt">2B</span><h3>Yuki Tanabe</h3><p class="role">Radio host, 29</p><q>I record the static at night. Voices come through.</q></div>
+        <div class="tenant"><span class="apt">2C</span><h3>Dolores Reyes</h3><p class="role">Widow, 73</p><q>My husband is still here, you know. In the walls.</q></div>
+        <div class="tenant"><span class="apt">2D</span><h3>Nadia Petrova</h3><p class="role">Former surgeon, 38</p><q>I lost my licence. Not my hands.</q></div>
+        <div class="tenant"><span class="apt">3A</span><h3>Beatrice Hale</h3><p class="role">Former actress, 60</p><q>The best exits are the ones nobody sees coming.</q></div>
+        <div class="tenant"><span class="apt">3B</span><h3>Sofia Albuquerque</h3><p class="role">Programmer, 31</p><q>Statistically, someone in this building is lying to you.</q></div>
+        <div class="tenant"><span class="apt">3C</span><h3>Agnes Weller</h3><p class="role">Doll collector, 81</p><q>I have lived here since 1961. I have seen nine supers. Nine.</q></div>
+        <div class="tenant"><span class="apt">3D</span><h3>Lena Varga</h3><p class="role">Botanist, 27</p><q>Plants don't lie. They just poison you honestly.</q></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Finding the Endings</h2>
+      <p>There are eight endings. Each one you find unlocks something new for your next run. A few tips, without spoilers:</p>
+      <ul>
+        <li><strong>Naming her isn't enough.</strong> The police need proof. Fill your journal before you pick up the lobby payphone.</li>
+        <li><strong>Don't trust every clue.</strong> Some evidence was planted. Accuse the wrong woman and the police will believe you.</li>
+        <li><strong>Protect the tenants.</strong> Justice tastes different when there is nobody left in the building to thank you.</li>
+        <li><strong>Watch the clock in the basement.</strong> On the last night, what happens when time runs out depends on who cares about you, and who you cared about.</li>
+        <li><strong>Listen to the old super.</strong> Abel left six cassette tapes hidden around the building. Find all of them before you make the call.</li>
       </ul>
     </section>
 
