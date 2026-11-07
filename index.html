@@ -86,6 +86,16 @@
     margin: 0 0 40px;
   }
 
+  .studio { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: center; margin-bottom: 40px; }
+  .studio .crest { order: 2; }
+  .studio .crest img { width: 100%; height: auto; display: block; border-radius: 16px;
+    border: 1px solid rgba(140, 216, 139, .18); box-shadow: 0 10px 40px rgba(0, 0, 0, .5); }
+  .studio .lede { margin-bottom: 0; }
+  @media (max-width: 600px) {
+    .studio { grid-template-columns: 1fr; gap: 20px; }
+    .studio .crest { order: 0; width: 160px; margin: 0 auto; }
+  }
+
   .game-card {
     display: grid;
     grid-template-columns: 220px 1fr;
@@ -150,8 +160,16 @@
 <main>
   <div class="wrap">
     <div class="intro">
-      <h1>Gryphon Entertainment</h1>
-      <p class="lede">We're a small studio, and we like it that way. No crunch, no bloat, no chasing trends — just a tight team pouring real care into every game we make. We'd rather ship one thing that feels great than ten things that don't. If it's not fun, it's not done.</p>
+      <div class="studio">
+        <picture class="crest">
+          <source srcset="assets/images/gryphon.webp" type="image/webp">
+          <img src="assets/images/gryphon.jpg" alt="The Gryphon Entertainment crest: a gryphon's head in teal and gold feathers" width="405" height="720">
+        </picture>
+        <div>
+          <h1>Gryphon Entertainment</h1>
+          <p class="lede">We're a small studio, and we like it that way. No crunch, no bloat, no chasing trends — just a tight team pouring real care into every game we make. We'd rather ship one thing that feels great than ten things that don't. If it's not fun, it's not done.</p>
+        </div>
+      </div>
 
       <a class="game-card" href="/swamp-adventure/">
         <picture>
