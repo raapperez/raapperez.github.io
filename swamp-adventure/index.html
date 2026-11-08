@@ -216,21 +216,10 @@
     gap: 14px;
     flex-wrap: wrap;
   }
-  .badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: #0b2b1f;
-    border: 2px solid var(--leaf);
-    color: var(--cream);
-    padding: 12px 20px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
-    transition: transform .15s ease, background .15s ease;
-  }
-  .badge:hover { background: var(--leaf); color: #0b2b1f; transform: translateY(-2px); }
+  /* the official Google Play badge, unaltered */
+  .badge { display: inline-block; line-height: 0; transition: transform .15s ease; }
+  .badge img { display: block; height: 60px; width: auto; }
+  .badge:hover { transform: translateY(-2px); }
 
   .hero-art {
     position: relative;
@@ -437,7 +426,10 @@
         <p class="lede">The frog never stops hopping — you drag its lilypad. Catch bugs with your tongue, stomp birds and alligators, pop pufferfish while invincible, and freeze time with the Bullet Time clock. Fast, colorful, and endlessly replayable — how far can you hop?</p>
         <div class="store-badges">
           <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">
-            ▶ Get it on Google Play
+            <picture>
+              <source srcset="assets/images/google-play-badge.webp" type="image/webp">
+              <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" width="814" height="246" loading="lazy">
+            </picture>
           </a>
         </div>
       </div>
@@ -726,7 +718,12 @@
     <div class="cta-band">
       <h2>Ready to hop in?</h2>
       <p>Swamp Adventure is free to play on Android.</p>
-      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">▶ Get it on Google Play</a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.swamp_adventure">
+          <picture>
+            <source srcset="assets/images/google-play-badge.webp" type="image/webp">
+            <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" width="814" height="246" loading="lazy">
+          </picture>
+        </a>
     </div>
   </div></section>
 </main>

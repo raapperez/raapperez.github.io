@@ -93,10 +93,10 @@
   ul { padding-left: 1.2em; color: #d4c8b0; }
   li { margin: .3em 0; }
 
-  .badge { display: inline-block; margin-top: 8px; padding: 12px 22px; border: 1px solid var(--blood);
-    color: var(--paper); text-decoration: none; letter-spacing: .1em; text-transform: uppercase; font-size: 14px;
-    transition: background .2s; }
-  .badge:hover { background: rgba(160, 20, 10, .25); }
+  /* the official Google Play badge, unaltered */
+  .badge { display: inline-block; margin-top: 8px; line-height: 0; transition: transform .15s ease; }
+  .badge img { display: block; height: 60px; width: auto; }
+  .badge:hover { transform: translateY(-2px); }
   .soon { font-size: 13px; color: var(--dim); margin-top: 10px; }
 
   .shot { display: block; border: 1px solid var(--line); margin: 0 0 16px; }
@@ -140,7 +140,12 @@
       <h2>The Game</h2>
       <p>The Halden Building is a first-person psychological horror mystery. The city has flooded, and you have just taken the job of superintendent in an old apartment block. By day you keep the building running and listen to the tenants. By night, something in the building starts to move.</p>
       <p>Every tenant has a story, an alibi and something to hide. Find out what happened in the Halden Building before the last night.</p>
-      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.thehaldenbuilding">▶ Get it on Google Play</a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.thehaldenbuilding">
+          <picture>
+            <source srcset="assets/images/google-play-badge.webp" type="image/webp">
+            <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" width="814" height="246" loading="lazy">
+          </picture>
+        </a>
       <p class="soon">Coming soon to Android.</p>
     </section>
 
