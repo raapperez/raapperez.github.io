@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollow Dream — PS1-Style Psychological Horror Game for Android</title>
+<meta name="description" content="Hollow Dream is a first-person PS1-style psychological horror game for Android. You are locked inside a dream: every door you open locks behind you. A new house every time, and a story told in 24 pages.">
+<meta name="theme-color" content="#0a0908">
+<link rel="canonical" href="https://raapperez.github.io/hollow-dream/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raapperez.github.io/hollow-dream/">
+<meta property="og:site_name" content="Gryphon Entertainment">
+<meta property="og:title" content="Hollow Dream — Gryphon Entertainment">
+<meta property="og:description" content="You are locked inside a dream. Every door you open locks behind you. Keep going.">
+<meta property="og:image" content="https://raapperez.github.io/hollow-dream/assets/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="A dark corridor in an old house, a door ajar with warm light spilling out, and a tall thin figure standing far away">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Hollow Dream",
+  "description": "A psychological horror game. You are locked inside a dream, and every door you open locks behind you.",
+  "genre": ["Horror", "Adventure"],
+  "gamePlatform": "Android",
+  "playMode": "SinglePlayer",
+  "url": "https://raapperez.github.io/hollow-dream/",
+  "image": "https://raapperez.github.io/hollow-dream/assets/images/keyart.jpg",
+  "author": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
+  "publisher": { "@type": "Organization", "name": "Gryphon Entertainment", "url": "https://raapperez.github.io/" },
+  "operatingSystem": "Android",
+  "applicationCategory": "GameApplication",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.gryphon.hollowdream",
+  "contentRating": "Ages 13+",
+  "inLanguage": ["en", "pt-BR"],
+  "keywords": "horror game, psychological horror, PS1 horror, retro horror, procedural horror, Android horror game, offline game"
+}
+</script>
+<style>
+  :root {
+    --ink: #0a0908;
+    --panel: #15120f;
+    --paper: #e8dcc4;
+    --dim: #a89a82;
+    --blood: #a0140a;
+    --line: #3a332a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 16px; width: 100%; }
+
+  header { padding: 24px 0; }
+  .brand { font: 700 13px/1 -apple-system, "Segoe UI", Roboto, Arial, sans-serif; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--dim); text-decoration: none; }
+
+  .hero { position: relative; border: 1px solid var(--line); overflow: hidden; }
+  .hero img, .shot img { display: block; width: 100%; height: auto; }
+  .hero::after { content: ''; position: absolute; inset: 0;
+    background: linear-gradient(90deg, rgba(10,9,8,.92) 0%, rgba(10,9,8,.55) 45%, rgba(10,9,8,0) 75%); }
+  .hero .text { position: absolute; z-index: 1; left: 0; top: 50%; transform: translateY(-50%); padding: 0 6%; max-width: 30em; }
+  h1 { margin: 0; font-weight: 600; font-size: clamp(26px, 6vw, 52px); line-height: 1.05; letter-spacing: .16em;
+    text-shadow: 0 0 18px rgba(200, 110, 30, .55); }
+  .tagline { font-style: italic; color: var(--dim); margin: .8em 0 0; font-size: clamp(14px, 2vw, 17px); }
+
+  main { flex: 1; }
+  section { padding: 32px 0 8px; }
+  h2 { font-weight: 600; font-size: 20px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; color: var(--paper); }
+  p { margin: 0 0 1em; color: #d4c8b0; }
+  ul { padding-left: 1.2em; color: #d4c8b0; }
+  li { margin: .3em 0; }
+
+  /* the official Google Play badge, unaltered */
+  .badge { display: inline-block; margin-top: 8px; line-height: 0; transition: transform .15s ease; }
+  .badge img { display: block; height: 60px; width: auto; }
+  .badge:hover { transform: translateY(-2px); }
+  .soon { font-size: 13px; color: var(--dim); margin-top: 10px; }
+
+  .shot { display: block; border: 1px solid var(--line); margin: 0 0 16px; }
+  .shot img { width: 100%; height: auto; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 16px; }
+  .pair .shot { margin: 0; }
+  figure { margin: 0; }
+  figure.shot figcaption { font-style: italic; font-size: 14px; color: var(--dim); padding: 8px 12px; background: var(--panel); }
+  @media (max-width: 600px) { .pair { grid-template-columns: 1fr; } }
+  strong { color: var(--paper); }
+
+  footer { padding: 40px 0 32px; text-align: center; color: var(--dim); font-size: 13px; }
+  footer a { margin: 0 8px; }
+
+  /* on phones the title goes under the picture instead of over it */
+  @media (max-width: 600px) {
+    .hero::after { display: none; }
+    .hero .text { position: static; transform: none; padding: 20px 16px; max-width: none; background: var(--panel); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap"><a class="brand" href="/">Gryphon Entertainment</a></div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <picture><source srcset="assets/images/corridor.webp" type="image/webp"><img src="assets/images/corridor.jpg" alt="A dark corridor in an old house at night: a door ajar on the right with warm light spilling across the floor, and a tall thin figure standing at the far end" width="1672" height="836"></picture>
+      <div class="text">
+        <h1>HOLLOW<br>DREAM</h1>
+        <p class="tagline">You are locked inside a dream. Every door you open locks behind you. Keep going.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>The Game</h2>
+      <p>You wake up in a room you have never seen. You remember nothing. The door behind you is locked.</p>
+      <p>Hollow Dream is a first-person psychological horror game set inside a dream that won't let you go. Every door you open locks behind you. There is no going back, only deeper. Find batteries, keep the light for when it's dark, and keep going.</p>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.gryphon.hollowdream">
+          <picture>
+            <source srcset="assets/images/google-play-badge.webp" type="image/webp">
+            <img src="assets/images/google-play-badge.png" alt="Get it on Google Play" width="814" height="246" loading="lazy">
+          </picture>
+        </a>
+      <p class="soon">Coming soon to Android.</p>
+    </section>
+
+    <section>
+      <h2>Features</h2>
+      <figure class="shot"><picture><source srcset="assets/images/wake-room.webp" type="image/webp"><img src="assets/images/wake-room.jpg" alt="The room you wake up in: dark red patterned wallpaper, a small bedside table, a closed door" width="1920" height="1080" loading="lazy"></picture></figure>
+      <ul>
+        <li>A new house every time you fall asleep: rooms, corridors and doors built anew for every dream.</li>
+        <li>A flashlight, batteries that run out, and keys for the doors that won't open.</li>
+        <li>A story told across 24 pages, found over many dreams.</li>
+        <li>A retro, low-poly look inspired by classic horror games.</li>
+        <li>Plays offline, with touch or gamepad controls, in English or Portuguese.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Something in Here</h2>
+      <p>The dream is not empty. Some things wait in the dark. Some only move when your back is turned. Listen to the floor, keep your light where it matters, and know when to run.</p>
+      <figure class="shot"><picture><source srcset="assets/images/tall-one.webp" type="image/webp"><img src="assets/images/tall-one.jpg" alt="A tall thin pale figure standing at the end of a corridor in the flashlight beam" width="1920" height="1080" loading="lazy"></picture><figcaption>It only moves when you are not looking.</figcaption></figure>
+      <div class="pair">
+        <figure class="shot"><picture><source srcset="assets/images/widow.webp" type="image/webp"><img src="assets/images/widow.jpg" alt="A spider-like creature clinging to the ceiling of a dark corridor" width="1920" height="1080" loading="lazy"></picture><figcaption>Don't look up.</figcaption></figure>
+        <figure class="shot"><picture><source srcset="assets/images/weeper.webp" type="image/webp"><img src="assets/images/weeper.jpg" alt="A pale figure crouched with its back turned in a dim room" width="1920" height="1080" loading="lazy"></picture><figcaption>Don't wake her.</figcaption></figure>
+      </div>
+      <figure class="shot"><picture><source srcset="assets/images/harlequin.webp" type="image/webp"><img src="assets/images/harlequin.jpg" alt="A cracked porcelain harlequin standing in a room under a bare bulb" width="1920" height="1080" loading="lazy"></picture><figcaption>Don't move.</figcaption></figure>
+    </section>
+
+    <section>
+      <h2>A Story in Pages</h2>
+      <p>Notes are scattered through the dream, written in different hands. A hospital chart. A child's drawing. A letter that always ends with "M". Find them across your dreams and piece together why you are here, and what happened on that rainy Thursday.</p>
+      <ul>
+        <li><strong>The story comes in order.</strong> Every page you find is kept, so the next dream picks up where you left off.</li>
+        <li><strong>The deeper you go, the more you find.</strong> The story moves faster further down.</li>
+        <li><strong>Read the loose pages too.</strong> Some are advice from whoever was here before you.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Content Advisory</h2>
+      <p>Contains frightening scenes and creatures, themes of death, injury and loss, sudden loud sounds and flickering lights. Intended for players aged 13 and over.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>A game by <a href="/">Gryphon Entertainment</a></p>
+    <p><a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Use</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
